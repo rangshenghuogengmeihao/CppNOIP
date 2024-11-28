@@ -10,7 +10,6 @@ float fun(int n) {
 int main() {
   int k;
   cin >> k;
-  //   cout << fun(n) << endl;
   for (int i = 1; i <= 15000; i++) {
     if (fun(i) > k) {
       cout << i << endl;
