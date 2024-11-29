@@ -1,3 +1,6 @@
+/*
+  @author:拾光 <rangshenghuogengmeihao@github.com>
+*/
 #include <iostream>
 using namespace std;
 int main() {
