@@ -2,3 +2,6 @@
 "[NOIP2011 普及组] 数字反转.exe"
 "[NOIP2015 普及组] 扫雷游戏.exe"
 "[NOIP2015 普及组] 扫雷游戏.txt"
+
+.DS_Store
+.vscode
