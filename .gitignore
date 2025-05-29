@@ -4,3 +4,4 @@
 *.exe
 main
 main.dSYM/
+test.cpp
