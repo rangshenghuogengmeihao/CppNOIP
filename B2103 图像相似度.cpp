@@ -1,7 +1,7 @@
 /*
   @author:拾光 <rangshenghuogengmeihao@github.com>
 */
-#include <iostream>
+#include<iostream>
 using namespace std;
 int main() {
     int n,m,a[100][100],b[100][100];

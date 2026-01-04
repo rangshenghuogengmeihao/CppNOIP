@@ -1,8 +1,8 @@
 /*
   @author:拾光 <rangshenghuogengmeihao@github.com>
 */
-#include <cmath>
-#include <iostream>
+#include<cmath>
+#include<iostream>
 using namespace std;
 int a[1010];
 int main(){

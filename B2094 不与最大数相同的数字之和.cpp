@@ -1,10 +1,9 @@
 /*
   @author:拾光 <rangshenghuogengmeihao@github.com>
 */
-#include <iostream>
+#include<iostream>
 using namespace std;
-
-int main() {
+int main(){
     int n,a[100];
     cin >> n;
     for (int i = 0; i < n; i++) {
