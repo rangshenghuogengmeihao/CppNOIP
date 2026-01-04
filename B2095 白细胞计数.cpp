@@ -1,7 +1,7 @@
 /*
   @author:拾光 <rangshenghuogengmeihao@github.com>
 */
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 float a[300],sum,avg,b;
 int main(){

@@ -1,8 +1,8 @@
 /*
   @author:拾光 <rangshenghuogengmeihao@github.com>
 */
-#include <iostream>
-#include <cstring>
+#include<iostream>
+#include<cstring>
 using namespace std;
 char a[110];
 int main(){

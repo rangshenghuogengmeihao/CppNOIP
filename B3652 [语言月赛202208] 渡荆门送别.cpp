@@ -1,7 +1,7 @@
 /*
   @author:拾光 <rangshenghuogengmeihao@github.com>
 */
-#include <iostream>
+#include<iostream>
 using namespace std;
 long long a[1000000];
 int main(){

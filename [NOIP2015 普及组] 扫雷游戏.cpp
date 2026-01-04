@@ -1,9 +1,9 @@
 /*
   @author:拾光 <rangshenghuogengmeihao@github.com>
 */
-#include <iostream>
+#include<iostream>
 using namespace std;
-int main() {
+int main(){
   int dx[8] = {-1, 0, 1, -1, 1, -1, 0, 1};
   int dy[8] = {-1, -1, -1, 0, 0, 1, 1, 1};
   int a, b, x, y;
