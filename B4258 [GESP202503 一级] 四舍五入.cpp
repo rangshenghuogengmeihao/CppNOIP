@@ -4,15 +4,16 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n,b=0;
+    int n;
     cin >> n;
-    for (int i=1;i<=n;i++){
+    while (n--){
         int a;
         cin >> a;
-        if (a%9==0 && a%8!=0){
-            b++;
+        if (a%10>=5){
+            cout << (a/10+1)*10 << endl;
+        }else{
+            cout << a/10*10 << endl;
         }
     }
-    cout << b << endl;
     return 0;
 }
