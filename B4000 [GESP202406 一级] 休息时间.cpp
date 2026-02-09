@@ -16,6 +16,6 @@ int main(){
   }else{
     s+=k;
   }
-  cout << h << """ """ << m << """ """ << s;
+  cout << h << " " << m << " " << s;
   return 0;
 }
