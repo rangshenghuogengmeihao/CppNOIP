@@ -11,4 +11,5 @@ int main(){
 		n--;
 	}
 	cout << a;
+	return 0;
 }
