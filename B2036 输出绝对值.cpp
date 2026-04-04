@@ -1,0 +1,14 @@
+/*
+  @author:拾光 <rangshenghuogengmeihao@github.com>
+*/
+#include<iostream>
+using namespace std;
+int main(){
+    double a;
+    cin>>a;
+    if (a<0){
+        a=-a;
+    }
+    printf("%.2f",a);
+    return 0;
+}
