@@ -22,3 +22,20 @@ int main(){
     cout << cnt;
     return 0;
 }
+/*
+#include<iostream>
+using namespace std;
+int main(){
+    int n,cnt=0;
+    cin >> n;
+    for (int i = 1; i <= 9; i++){
+        int num=i;
+        while (num<=n){
+            cnt++;
+            num = num*10+i;
+        }
+    }
+    cout << cnt;
+    return 0;
+}
+*/
