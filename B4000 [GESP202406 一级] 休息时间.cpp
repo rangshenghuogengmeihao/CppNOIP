@@ -19,3 +19,17 @@ int main(){
   cout << h << " " << m << " " << s;
   return 0;
 }
+/*
+#include<iostream>
+using namespace std;
+int main(){
+  int h,m,s,k;
+  cin >> h >> m >> s >> k;
+  int a = h*3600 + m*60 + s + k;
+  h = a / 3600;
+  m = (a % 3600) / 60;
+  s = a % 60;
+  cout << h << " " << m << " " << s;
+  return 0;
+}
+*/
