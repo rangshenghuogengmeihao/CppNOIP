@@ -1,7 +1,7 @@
 /*
   @author:拾光 <rangshenghuogengmeihao@github.com>
 */
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 int a[15] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 int main() {
