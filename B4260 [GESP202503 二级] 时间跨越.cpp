@@ -3,41 +3,64 @@
 */
 #include<iostream>
 using namespace std;
-bool leap(int year){
-    if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
-        return true;
+int a[13] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+int main() {
+  int y, m, d, h, k;
+  cin >> y >> m >> d >> h >> k;
+  if ((y % 400 == 0) || (y % 4 == 0 && y % 100 != 0))
+    a[2] = 29;      // 闰年的 2 月是 29 天
+  h += k;           // 总的时间
+  if (h >= 24) {    // 有无超过 24 小时
+    d++;            // 超过 24 小时，d 加一天
+    h = h - 24;     // h 减掉 24
+    if (d > a[m]) { // 天数超过了当月的最多天数
+      m++;          // 月份增加 1
+      d = 1;        // 日期是 1 号
+      if (m > 12) { // 月份大于 12 月
+        y++;        // 年份增加 1
+        m = 1;      // 月份是 1 月
+      }
     }
-    else {
-        return false;
-    }
+  }
+  printf("%d %d %d %d", y, m, d, h);
+  return 0;
 }
-int days(int year,int month){
-    if (month == 2){
-        if (leap(year)){
-            return 29;
-        }else{
-            return 28;
-        }
-    }else if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12){
-        return 31;
-    }else
-        return 30;
-}
-int main(){
-    int y,m,d,h,k;
-    cin >> y >> m >> d >> h >> k;
-    d += (h+k)/24;
-    h = (h+k) % 24;
-    while (true){
-        int day = days(y,m);
-        if (d <= day)
-            break;
-        d -= day;
-        m += 1;
-        if (m > 12){
-            m = 1;
-            y += 1;
-        }
-    }
-    cout << y << " " << m << " " << d << " " << h;
-}
+
+// bool leap(int year){
+//     if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
+//         return true;
+//     }
+//     else {
+//         return false;
+//     }
+// }
+// int days(int year,int month){
+//     if (month == 2){
+//         if (leap(year)){
+//             return 29;
+//         }else{
+//             return 28;
+//         }
+//     }else if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12){
+//         return 31;
+//     }else
+//         return 30;
+// }
+// int main(){
+//     int y,m,d,h,k;
+//     cin >> y >> m >> d >> h >> k;
+//     d += (h+k)/24;
+//     h = (h+k) % 24;
+//     while (true){
+//         int day = days(y,m);
+//         if (d <= day)
+//             break;
+//         d -= day;
+//         m += 1;
+//         if (m > 12){
+//             m = 1;
+//             y += 1;
+//         }
+//     }
+//     cout << y << " " << m << " " << d << " " << h;
+// }
